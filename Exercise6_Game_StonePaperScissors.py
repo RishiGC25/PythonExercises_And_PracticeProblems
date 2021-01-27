@@ -31,11 +31,11 @@ while True:
                 print("You won!")
                 user += 1
             print("\n")
-            print("             SCORE BOARD")
-            print("---------------------------------")
-            print(f"You:                           {user}")
-            print(f"CPU:                           {compu}")
-            print("\n")
+            print("\t\t\t             SCORE BOARD")
+            print("\t\t\t---------------------------------")
+            print(f"\t\t\tYou:                           {user}")
+            print(f"\t\t\tCPU:                           {compu}")
+            print("\n\n\n")
         elif userChoice == "P":
             if choice == "S":
                 print("You could not win this one.\nBetter luck next time!")
@@ -46,11 +46,11 @@ while True:
                 print("You won!")
                 user += 1
             print("\n")
-            print("             SCORE BOARD")
-            print("---------------------------------")
-            print(f"You:                           {user}")
-            print(f"CPU:                           {compu}")
-            print("\n")
+            print("\t\t\t             SCORE BOARD")
+            print("\t\t\t---------------------------------")
+            print(f"\t\t\tYou:                           {user}")
+            print(f"\t\t\tCPU:                           {compu}")
+            print("\n\n\n")
         elif userChoice == "X":
             if choice == "S":
                 print("You could not win this one.\nBetter luck next time!")
@@ -61,11 +61,11 @@ while True:
                 print("You won!")
                 user += 1
             print("\n")
-            print("            SCORE BOARD")
-            print("---------------------------------")
-            print(f"You:                           {user}")
-            print(f"CPU:                           {compu}")
-            print("\n")
+            print("\t\t\t            SCORE BOARD")
+            print("\t\t\t---------------------------------")
+            print(f"\t\t\tYou:                           {user}")
+            print(f"\t\t\tCPU:                           {compu}")
+            print("\n\n\n")
         else:
             print("Please enter valid letter and try again!")
         attempts += 1
