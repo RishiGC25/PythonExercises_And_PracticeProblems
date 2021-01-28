@@ -52,7 +52,7 @@ if LogOrRetrieve == 1:
     if DietOrExercise == 1:
         if ClientName == 1:
             print("Harry")
-            f = open("Harry1.txt", "a")
+            f = open("Exercise5_Harry1.txt", "a")
             date = "[" + str(getdate()) + "]"
             f.write(date)
             print("Enter what food has been consumed.")
@@ -61,7 +61,7 @@ if LogOrRetrieve == 1:
             f.close()
         elif ClientName == 2:
             print("Rohan")
-            f = open("Rohan1.txt", "a")
+            f = open("Exercise5_Rohan1.txt", "a")
             date = "[" + str(getdate()) + "]"
             f.write(date)
             print("Enter what food has been consumed.")
@@ -70,7 +70,7 @@ if LogOrRetrieve == 1:
             f.close()
         elif ClientName == 3:
             print("Hammad")
-            f = open("Hammad1.txt", "a")
+            f = open("Exercise5_Hammad1.txt", "a")
             date = "[" + str(getdate()) + "]"
             f.write(date)
             print("Enter what food has been consumed.")
@@ -80,7 +80,7 @@ if LogOrRetrieve == 1:
     if DietOrExercise == 2:
         if ClientName == 1:
             print("Harry")
-            f = open("Harry2.txt", "a")
+            f = open("Exercise5_Harry2.txt", "a")
             date = "[" + str(getdate()) + "]"
             f.write(date)
             print("Enter the name of the workout done.")
@@ -89,7 +89,7 @@ if LogOrRetrieve == 1:
             f.close()
         elif ClientName == 2:
             print("Rohan")
-            f = open("Rohan2.txt", "a")
+            f = open("Exercise5_Rohan2.txt", "a")
             date = "[" + str(getdate()) + "]"
             f.write(date)
             print("Enter the name of the workout done.")
@@ -98,7 +98,7 @@ if LogOrRetrieve == 1:
             f.close()
         elif ClientName == 3:
             print("Hammad")
-            f = open("Hammad2.txt", "a")
+            f = open("Exercise5_Hammad2.txt", "a")
             date = "[" + str(getdate()) + "]"
             f.write(date)
             print("Enter the name of the workout done.")
@@ -119,34 +119,34 @@ elif LogOrRetrieve == 2:
     if DietOrExercise == 1:
         if ClientName == 1:
             print("Harry")
-            with open("Harry1.txt") as f:
+            with open("Exercise5_Harry1.txt") as f:
                 a = f.read()
                 print(a)
         elif ClientName == 2:
             print("Rohan")
-            with open("Rohan1.txt") as f:
+            with open("Exercise5_Rohan1.txt") as f:
                 a = f.read()
                 print(a)
         elif ClientName == 3:
             print("Hammad")
-            with open("Hammad1.txt") as f:
+            with open("Exercise5_Hammad1.txt") as f:
                 a = f.read()
                 print(a)
 
     if DietOrExercise == 2:
         if ClientName == 1:
             print("Harry")
-            with open("Harry2.txt") as f:
+            with open("Exercise5_Harry2.txt") as f:
                 a = f.read()
                 print(a)
         elif ClientName == 2:
             print("Rohan")
-            with open("Rohan2.txt") as f:
+            with open("Exercise5_Rohan2.txt") as f:
                 a = f.read()
                 print(a)
         elif ClientName == 3:
             print("Hammad")
-            with open("Hammad2.txt") as f:
+            with open("Exercise5_Hammad2.txt") as f:
                 a = f.read()
                 print(a)
 
