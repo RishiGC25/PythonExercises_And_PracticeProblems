@@ -4,10 +4,14 @@
 # 45 * 3 = 555, 56+9 = 77, 56/6 = 4
 # The program should take operator and the two numbers as input from the user and then return the result
 
+import time
+
 print("Enter operator(+ or - or * or / )")
 op = input()
 a = int(input("Enter first number"))
 b = int(input("Enter second number"))
+
+time.sleep(1.5)
 
 if op == "+":
     if ((a == 56) or (a == 9)) and ((b == 9) or (b == 56)):
@@ -32,3 +36,5 @@ elif op == "/":
 
 else:
     print("\nCan't do this")
+
+time.sleep(3.0)
