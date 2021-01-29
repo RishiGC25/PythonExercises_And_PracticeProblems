@@ -19,9 +19,9 @@ while True:
         userChoice = inpChoice.upper()
 
         choice = random.choice(lst)
-        print(f"You chose {userChoice} and CPU chose {choice}")
 
         if userChoice == "S":
+            print(f"You chose {userChoice} and CPU chose {choice}")
             if choice == "P":
                 print("You could not win this one.\nBetter luck next time!")
                 compu += 1
@@ -36,7 +36,9 @@ while True:
             print(f"\t\t\tYou:                           {user}")
             print(f"\t\t\tCPU:                           {compu}")
             print("\n\n\n")
+
         elif userChoice == "P":
+            print(f"You chose {userChoice} and CPU chose {choice}")
             if choice == "S":
                 print("You could not win this one.\nBetter luck next time!")
                 compu += 1
@@ -51,7 +53,9 @@ while True:
             print(f"\t\t\tYou:                           {user}")
             print(f"\t\t\tCPU:                           {compu}")
             print("\n\n\n")
+
         elif userChoice == "X":
+            print(f"You chose {userChoice} and CPU chose {choice}")
             if choice == "S":
                 print("You could not win this one.\nBetter luck next time!")
                 compu += 1
@@ -71,8 +75,10 @@ while True:
         attempts += 1
 
     if attempts >= 10:
+        
         if user > compu:
             print("Congratulations!! \nYou WON!!!!!!")
+
         elif compu > user:
             print("Sorry! \nYou lost the game.\nPlease try again.\n")
         else:
