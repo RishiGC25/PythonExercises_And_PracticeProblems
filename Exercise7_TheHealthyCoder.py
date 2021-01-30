@@ -82,7 +82,7 @@ while True:
         now = datetime.datetime.now()
         TimeNow = now.strftime("%H:%M")
 
-    TimeElapsedSince9AM = ( (int(TimeNow[0:2]) - 9)*60 + int(TimeNow[3:5]) )
+    TimeElapsedSince9AM = ( (int(TimeNow[0:2]) - 9)*3600 + (60*(int(TimeNow[3:5]))) + (int(TimeNow[6:8])) )
 
     if TimeElapsedSince9AM % 2700 == 0: # Since 9am, every 45 minutes
         mixer.init()
@@ -101,4 +101,4 @@ while True:
                 continue
         
         now = datetime.datetime.now()
-        TimeNow = now.strftime("%H:%M")
+        TimeNow = now.strftime("%H:%M:%S")
