@@ -16,14 +16,20 @@ the time when the user performed a certain task.
 """
 
 
+
 from pygame import mixer
+
 import datetime
+
 
 now = datetime.datetime.now()
 TimeNow = now.strftime("%H:%M:%S")
+
 TimeElapsedSince9AM = ( (int(TimeNow[0:2]) - 9)*3600 + (60*(int(TimeNow[3:5]))) + (int(TimeNow[6:8])) )
+
 TimesMissedWaterEye = TimeElapsedSince9AM//1800
 TimesMissedWorkout = TimeElapsedSince9AM//2700
+
 if (TimeElapsedSince9AM>1800):
     print("\nREMINDERS HAVE BEEN MISSED!!\n\n")
     print(f"You are supposed to drink {TimesMissedWaterEye} dose(s)(1 dose=250 ml) of water\n") 
@@ -33,18 +39,22 @@ if (TimeElapsedSince9AM>1800):
 
 WaterDose, EyDose, ExDose = 0,0,0
 
+
 while True:
 
     now = datetime.datetime.now()
     TimeNow = now.strftime("%H:%M:%S")
+
     TimeElapsedSince9AM = ( (int(TimeNow[0:2]) - 9)*3600 + (60*(int(TimeNow[3:5]))) + (int(TimeNow[6:8])) )
+    
     if TimeElapsedSince9AM%1800 == 0: # Since 9am, every thirty minutes:
         
         mixer.init()
         mixer.music.load("Exercise7_Song_DrinkMoreWater.mp3")
         mixer.music.set_volume(0.7)
         mixer.music.play()
-        print("Kindly drink 250 ML of water.")
+
+        print("\nKindly drink 250 ML of water.")
 
         while True:
             Water = input('Say "Drank" to end the embarrassing music :)')
@@ -59,6 +69,7 @@ while True:
 
         print("You have drunk water. Great!")
 
+
         now = datetime.datetime.now()
         TimeNow = now.strftime("%H:%M")
 
@@ -66,7 +77,9 @@ while True:
         mixer.music.load("Exercise7_Song_TheEyeSong.mp3")
         mixer.music.set_volume(0.7)
         mixer.music.play()
-        print("Kindly do your eye exercise.")
+
+        print("\nKindly do your eye exercise.")
+
 
         while True:
             Eye = input('Say "EyDone" to end the embarrassing music :)')
@@ -79,18 +92,26 @@ while True:
             else:
                 continue
         
+
         now = datetime.datetime.now()
         TimeNow = now.strftime("%H:%M")
 
+
     TimeElapsedSince9AM = ( (int(TimeNow[0:2]) - 9)*3600 + (60*(int(TimeNow[3:5]))) + (int(TimeNow[6:8])) )
 
+
     if TimeElapsedSince9AM % 2700 == 0: # Since 9am, every 45 minutes
+
+
         mixer.init()
         mixer.music.load("Exercise7_Song_TheExerciseSong.mp3")
         mixer.music.set_volume(0.7)
         mixer.music.play()
+
+        print("\nKindly do your exercise.")
+
         while True:
-            print("Kindly do your exercise.")
+            
             Exercise = input('Say "ExDone" to end the embarrassing music :)')
             ExerciseQuery = Exercise.upper()
             if ExerciseQuery == 'EXDONE':
