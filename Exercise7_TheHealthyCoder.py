@@ -20,21 +20,25 @@ from pygame import mixer
 import datetime
 
 now = datetime.datetime.now()
-TimeNow = now.strftime("%H:%M")
-TimeElapsedSince9AM = ( (int(TimeNow[0:2]) - 9)*60 + int(TimeNow[3:5]) )
-TimesMissed = TimeElapsedSince9AM//30
-if (TimeElapsedSince9AM>30):
-    print(f"You are supposed to drink {TimesMissed} dose(s)(1 dose = 250 ml) of water and {TimesMissed} round(s) of your workout")
+TimeNow = now.strftime("%H:%M:%S")
+TimeElapsedSince9AM = ( (int(TimeNow[0:2]) - 9)*3600 + (60*(int(TimeNow[3:5]))) + (int(TimeNow[6:8])) )
+TimesMissedWaterEye = TimeElapsedSince9AM//1800
+TimesMissedWorkout = TimeElapsedSince9AM//2700
+if (TimeElapsedSince9AM>1800):
+    print("\nREMINDERS HAVE BEEN MISSED!!\n\n")
+    print(f"You are supposed to drink {TimesMissedWaterEye} dose(s)(1 dose=250 ml) of water\n") 
+    print(f"You are supposed to do {TimesMissedWaterEye} round(s) of your eye exercise\n")
+    if (TimeElapsedSince9AM>2700):
+        print(f"You are supposed to do {TimesMissedWorkout} round(s) of your workout\n")
 
 WaterDose, EyDose, ExDose = 0,0,0
 
 while True:
 
     now = datetime.datetime.now()
-    TimeNow = now.strftime("%H:%M")
-    TimeElapsedSince9AM = ( (int(TimeNow[0:2]) - 9)*60 + int(TimeNow[3:5]) )  # Gives time elapsed in minutes since 9 AM
-
-    if TimeElapsedSince9AM%30 == 0: # Since 9am, every thirty minutes:
+    TimeNow = now.strftime("%H:%M:%S")
+    TimeElapsedSince9AM = ( (int(TimeNow[0:2]) - 9)*3600 + (60*(int(TimeNow[3:5]))) + (int(TimeNow[6:8])) )
+    if TimeElapsedSince9AM%1800 == 0: # Since 9am, every thirty minutes:
         
         mixer.init()
         mixer.music.load("Exercise7_Song_DrinkMoreWater.mp3")
@@ -80,7 +84,7 @@ while True:
 
     TimeElapsedSince9AM = ( (int(TimeNow[0:2]) - 9)*60 + int(TimeNow[3:5]) )
 
-    if TimeElapsedSince9AM % 45 == 0: # Since 9am, every 45 minutes
+    if TimeElapsedSince9AM % 2700 == 0: # Since 9am, every 45 minutes
         mixer.init()
         mixer.music.load("Exercise7_Song_TheExerciseSong.mp3")
         mixer.music.set_volume(0.7)
