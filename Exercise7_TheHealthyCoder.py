@@ -31,9 +31,12 @@ TimesMissedWaterEye = TimeElapsedSince9AM//1800
 TimesMissedWorkout = TimeElapsedSince9AM//2700
 
 if (TimeElapsedSince9AM>1800):
+
     print("\nREMINDERS HAVE BEEN MISSED!!\n\n")
+
     print(f"You are supposed to drink {TimesMissedWaterEye} dose(s)(1 dose=250 ml) of water\n") 
     print(f"You are supposed to do {TimesMissedWaterEye} round(s) of your eye exercise\n")
+
     if (TimeElapsedSince9AM>2700):
         print(f"You are supposed to do {TimesMissedWorkout} round(s) of your workout\n")
 
@@ -60,9 +63,15 @@ while True:
             Water = input('Say "Drank" to end the embarrassing music :)')
             WaterQuery = Water.upper()
 
+            now = datetime.datetime.now()
+            TimeNow = now.strftime("%H:%M:%S")
+
             if WaterQuery == 'DRANK':
                 mixer.music.stop()
-                WaterDose += 1 
+                WaterDose += 1
+                f = open("Exercise7_WaterDose.txt","a")
+                appendIt = "Time"+str(WaterDose) + ":" + "[" + TimeNow + "]"
+                f.write(appendIt)     
                 break
             else:
                 continue
@@ -71,7 +80,7 @@ while True:
 
 
         now = datetime.datetime.now()
-        TimeNow = now.strftime("%H:%M")
+        TimeNow = now.strftime("%H:%M:%S")
 
         mixer.init()
         mixer.music.load("Exercise7_Song_TheEyeSong.mp3")
@@ -85,20 +94,26 @@ while True:
             Eye = input('Say "EyDone" to end the embarrassing music :)')
             EyeQuery = Eye.upper()
 
+            now = datetime.datetime.now()
+            TimeNow = now.strftime("%H:%M:%S")
+
             if EyeQuery == 'EYDONE':
                 mixer.music.stop() 
                 EyDose += 1
+                f = open("Exercise7_EyeDose.txt","a")
+                appendIt = "Time"+str(EyDose) + ":" + "[" + TimeNow + "]"
+                f.write(appendIt)
                 break
             else:
                 continue
         
 
-        now = datetime.datetime.now()
-        TimeNow = now.strftime("%H:%M")
+    now = datetime.datetime.now()
+    TimeNow = now.strftime("%H:%M:%S")
 
 
     TimeElapsedSince9AM = ( (int(TimeNow[0:2]) - 9)*3600 + (60*(int(TimeNow[3:5]))) + (int(TimeNow[6:8])) )
-
+    print(TimeElapsedSince9AM)
 
     if TimeElapsedSince9AM % 2700 == 0: # Since 9am, every 45 minutes
 
@@ -111,15 +126,21 @@ while True:
         print("\nKindly do your exercise.")
 
         while True:
-            
+                
             Exercise = input('Say "ExDone" to end the embarrassing music :)')
             ExerciseQuery = Exercise.upper()
+            now = datetime.datetime.now()
+            TimeNow = now.strftime("%H:%M:%S")
+
             if ExerciseQuery == 'EXDONE':
                 mixer.music.stop()
                 ExDose += 1 
+                f = open("Exercise7_ExerciseDose.txt","a")
+                appendIt = "Time"+str(ExDose) + ":"+ "[" + TimeNow + "]"
+                f.write(appendIt) 
                 break
             else:
                 continue
-        
-        now = datetime.datetime.now()
-        TimeNow = now.strftime("%H:%M:%S")
+    
+    now = datetime.datetime.now()
+    TimeNow = now.strftime("%H:%M:%S")
