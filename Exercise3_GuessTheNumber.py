@@ -18,7 +18,8 @@ equal to 0.
 n = 18
 g = 0
 f = 0
-while g < 5:
+inp = int(input("How many guesses do you want?"))
+while g < inp:
     print("Enter number")
     x = int(input())
     g = g + 1
@@ -29,10 +30,10 @@ while g < 5:
         break
     elif x > n:
         print("Your attempt is greater than the number")
-        print((5-g), "guesses left.")
+        print((inp-g), "guesses left.")
     else:
         print("Your attempt is lesser than the number")
-        print((5-g), "guesses left.")
+        print((inp-g), "guesses left.")
 
 
 if f == 0:
