@@ -15,10 +15,10 @@
 # **
 # *
 
-print("Enter the number of rows 'n' ")
+print("Enter the number of rows 'n' \n")
 n = int(input())
-print("Enter 1 for true;and 0 for false;")
-print("True will print a normal triangle with", n, "rows and false will print an inverted triangle with same rows")
+print("Enter 1 for true;and 0 for false\n")
+print("True will print a normal triangle with", n, "rows and false will print an inverted triangle with same rows\n")
 boo = int(input())
 TrueOrFalse = bool(boo)
 
