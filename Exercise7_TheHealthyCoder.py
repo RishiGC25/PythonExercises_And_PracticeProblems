@@ -71,7 +71,8 @@ while True:
                 WaterDose += 1
                 f = open("Exercise7_WaterDose.txt","a")
                 appendIt = "Time"+str(WaterDose) + ":" + "[" + TimeNow + "]"
-                f.write(appendIt)     
+                f.write(appendIt)
+                f.close()    
                 break
             else:
                 continue
@@ -103,6 +104,7 @@ while True:
                 f = open("Exercise7_EyeDose.txt","a")
                 appendIt = "Time"+str(EyDose) + ":" + "[" + TimeNow + "]"
                 f.write(appendIt)
+                f.close()
                 break
             else:
                 continue
@@ -133,6 +135,7 @@ while True:
                 f = open("Exercise7_ExerciseDose.txt","a")
                 appendIt = "Time"+str(ExDose) + ":"+ "[" + TimeNow + "]"
                 f.write(appendIt) 
+                f.close()
                 break
             else:
                 continue
