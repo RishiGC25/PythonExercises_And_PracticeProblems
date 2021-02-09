@@ -5,7 +5,7 @@
 
 __This a repository for my Exercises and Practice Problems in Python__
 
-Exercise1_MyDictionary:
+## Exercise1_MyDictionary:
 we have to create a dictionary, similar to the real-world dictionary.
 
 The details and functionalities that are essential and must be present are:
@@ -23,7 +23,12 @@ The above one was just an example.
 
 One word outputs are preferred.
 
-
+## Exercise2_FaultyCalculator
+Exercise 2 - Faulty Calculator
+Design a calculator which will correctly solve all the problems except
+the following ones:
+45 * 3 = 555, 56+9 = 77, 56/6 = 4
+The program should take operator and the two numbers as input from the user and then return the result
 _Author: Rishi_
 
 ***
