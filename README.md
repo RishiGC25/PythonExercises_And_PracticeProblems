@@ -29,6 +29,13 @@ Design a calculator which will correctly solve all the problems except
 the following ones:
 45 * 3 = 555, 56+9 = 77, 56/6 = 4
 The program should take operator and the two numbers as input from the user and then return the result
+
+## Exercise3_GuessTheNumber
+A "Number Guessing Game," in which a winning number is set to some integer value. 
+The Program should take input from the user,
+and if the entered number is less than the winning number, a message should display that the number is smaller and the appropriate message if it is larger.
+
+
 _Author: Rishi_
 
 ***
