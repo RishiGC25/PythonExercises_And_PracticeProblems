@@ -36,21 +36,12 @@ The Program should take input from the user,
 and if the entered number is less than the winning number, a message should display that the number is smaller and the appropriate message if it is larger.
 
 ## Exercise4_PatternPrinting
-Pattern Printing
-Input = Integer n
-Boolean = True or False
+Pattern Printing  
+Input = Integer n 
+  
+True: Prints an star pattern arrangement with of n lines
 
-True, n=4:
-*
-**
-***
-****
-
-False, n=4:
-****
-***
-**
-*
+False: Prints an inverted star pattern arrangement of n lines
 
 ## Exercise5_HealthManagementSystem
 Exercise 5: Health Management System
