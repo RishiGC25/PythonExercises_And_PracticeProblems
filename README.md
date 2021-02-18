@@ -63,6 +63,16 @@ def getdate():
 The purpose of this function is to give time with every record of food or exercise added in the file.
 Write a function to retrieve exercise or food file records for any client.
 
+## Exercise6_Game_StonePaperScissors  
+This is a stone-paper-scissiors game against the CPU.  
+It has a scoreboard which gets updated with each iteration.  
+  
+  
+Rules:  
+
+Stone X Scissors -- Stone   Wins  
+Stone X Paper    -- Paper   Wins  
+Paper X Scissors -- Scissor Wins  
 
 _Author: Rishi_
 
