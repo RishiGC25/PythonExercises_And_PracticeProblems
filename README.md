@@ -65,7 +65,7 @@ Write a function to retrieve exercise or food file records for any client.
 
 ## Exercise6_Game_StonePaperScissors  
 This is a stone-paper-scissiors game against the CPU.  
-It has a scoreboard which gets updated with each iteration.  
+It has a scoreboard which gets updated with each iteration/chance.  
   
   
 Rules:  
