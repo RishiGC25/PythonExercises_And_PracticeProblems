@@ -50,8 +50,7 @@ The task is to create a "Health Management System." Suppose you are a fitness tr
  with three clients, i.e., (Harry, Rohan, Hammad). For each client, you have to design their exercise and diet plan.
 
 Instructions:
-Create a food log file for each client
-Create an exercise log file for each client.
+Create a food log file and an exercise log file for each client.
 Ask the user whether they want to log or retrieve client data.
 Write a function that takes the user input of the client's name. After the client's name is entered, it will display a
 message as "What you want to log- Diet or Exercise".
