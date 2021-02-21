@@ -19,8 +19,7 @@ The output will be:
 
  "the process of writing computer programs"
 
-The above one was just an example.
-
+The above one was just an example...
 One word outputs are preferred.
 
 ## Exercise2_FaultyCalculator
