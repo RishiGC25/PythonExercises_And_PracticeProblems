@@ -34,6 +34,7 @@ A "Number Guessing Game," in which a winning number is set to some integer value
 The Program should take input from the user,
 and if the entered number is less than the winning number, a message should display that the number is smaller and the appropriate message if it is larger.
 
+  
 ## Exercise4_PatternPrinting
 Pattern Printing  
 Input = Integer n 
@@ -52,7 +53,7 @@ Instructions:
 Create a food log file and an exercise log file for each client.
 Ask the user whether they want to log or retrieve client data.
 Write a function that takes the user input of the client's name. After the client's name is entered, it will display a
-message as "What you want to log- Diet or Exercise".
+message as "What you want to log- Diet or Exercise?".
 
 Use function
 def getdate():
