@@ -1,4 +1,3 @@
-import sys
 """
 
 Exercise 5: Health Management System
@@ -23,6 +22,7 @@ Write a function to retrieve exercise or food file records for any client.
 
 """
 
+import sys
 
 def getdate():
     import datetime
