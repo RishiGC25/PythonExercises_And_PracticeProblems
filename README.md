@@ -63,7 +63,7 @@ The purpose of this function is to give time with every record of food or exerci
 Write a function to retrieve exercise or food file records for any client.
 
 ## Exercise6_Game_StonePaperScissors  
-This is a stone-paper-scissiors game against the CPU(maybe even A.I. that analyses your every move with some secret algorithm! ;) ).  
+This is a stone-paper-scissiors game against the CPU(maybe even A.I. that analyses your every move with some secret algorithm and will ultimately defeat you! ;) ).  
 It has a scoreboard which gets updated with each iteration/chance.  
   
   
