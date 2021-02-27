@@ -7,7 +7,8 @@
 import time
 
 print("Enter operator(+ or - or * or / )")
-op = input()
+str = input()
+op = str.strip()
 a = int(input("Enter first number"))
 b = int(input("Enter second number"))
 
