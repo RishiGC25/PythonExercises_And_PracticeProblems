@@ -23,4 +23,4 @@ k = input("Enter the word which you want to know the meaning of\n")
 try:
     print(dic[k])
 except Exception as e:
-    print("Word not found")
+    print("Sorry! The word was not found in our dictionary.")
