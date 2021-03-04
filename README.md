@@ -10,7 +10,7 @@ we have to create a dictionary, similar to the real-world dictionary.
 
 The details and functionalities that are essential and must be present are:
 
-User will give a word as an input. Suppose that the word is present in your dictionary along with its definition or meaning.
+User will give a word as an input. Suppose that the word is present in your dictionary along with its meaning.
 The program will print the meaning or definition of that word.
 For example:
 The user inputs the word : “coding”
@@ -22,12 +22,14 @@ The output will be:
 The above one was just an example...
 One word outputs are preferred.
 
+
 ## Exercise2_FaultyCalculator
 Exercise 2 - Faulty Calculator
 Design a calculator which will correctly solve all the problems except
 the following ones:
 45 * 3 = 555, 56+9 = 77, 56/6 = 4
 The program should take operator and the two numbers as input from the user and then return the result
+
 
 ## Exercise3_GuessTheNumber
 A "Number Guessing Game," in which a winning number is set to some integer value. 
@@ -42,6 +44,7 @@ Input = Integer n
 True: Prints an star pattern arrangement with of n lines
 
 False: Prints an inverted star pattern arrangement of n lines
+
 
 ## Exercise5_HealthManagementSystem
 Exercise 5: Health Management System
@@ -62,11 +65,11 @@ def getdate():
 The purpose of this function is to give time with every record of food or exercise added in the file.
 Write a function to retrieve exercise or food file records for any client.
 
+
 ## Exercise6_Game_StonePaperScissors  
 This is a stone-paper-scissiors game against the CPU(maybe even A.I. that analyses your every move with some secret algorithm and will ultimately defeat you! ;) ).  
 It has a scoreboard which gets updated with each iteration/chance.  
-  
-  
+
 Rules:  
 
 Stone X Scissors -- Stone   Wins  
