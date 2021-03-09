@@ -62,9 +62,8 @@ Use function
 def getdate():
            import datetime
            return datetime.datetime.now()
-
 The purpose of this function is to give time with every record of food or exercise added in the file.
-Write a function to retrieve exercise or food file records for any client when asked by user.
+Write a function to retrieve exercise or food file records for any client.
 
 
 ## Exercise6_Game_StonePaperScissors  
