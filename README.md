@@ -47,7 +47,6 @@ False: Prints an inverted star pattern arrangement of n lines
 
 
 ## Exercise5_HealthManagementSystem
-Exercise 5: Health Management System
 The task is to create a "Health Management System." Suppose you are a fitness trainer and nutritionist. You have to deal with three clients, i.e., (Harry, Rohan, Hammad). For each client, you have to design their exercise and diet plan.
 
 Instructions:
