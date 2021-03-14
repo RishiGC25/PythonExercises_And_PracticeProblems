@@ -71,7 +71,7 @@ while True:
             print(f"\t\t\tCPU:                           {compu}")
             print("\n\n\n")
         else:
-            print("Please enter valid letter and try again!")
+            print("Please enter a valid letter and try again!")
         attempts += 1
 
     if attempts >= 10:
