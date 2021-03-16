@@ -18,8 +18,8 @@
 print("Enter the number of rows 'n' \n")
 n = int(input())
 print("Enter 1 for true;and 0 for false\n")
-print("True will print a normal triangle with", n, "rows ")
-print("False will print an inverted triangle with", n, "rows ")
+print("True will print a normal triangle with", n, "rows \n")
+print("False will print an inverted triangle with", n, "rows \n")
 boo = int(input())
 TrueOrFalse = bool(boo)
 
