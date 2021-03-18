@@ -1,5 +1,7 @@
 import random
 import sys
+from pygame import mixer
+
 lst = ["S", "P", "X"]
 attempts = 0
 compu = 0
@@ -9,6 +11,10 @@ print("Enter:")
 
 while True:
     attempts = 1
+    mixer.init()
+    mixer.music.load("Exercise6_Music_StartGame.mp3")
+    mixer.music.set_volume(0.7)
+    mixer.music.play()
 
     while attempts <= 10:
         print(11-attempts, "attempts left")
