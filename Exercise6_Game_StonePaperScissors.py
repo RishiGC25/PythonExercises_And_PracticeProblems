@@ -56,6 +56,10 @@ while True:
                 print("Tie!")
             else:
                 print("You won!")
+                mixer.init()
+                mixer.music.load("Exercise6_Music_Win.mp3")
+                mixer.music.set_volume(0.7)
+                mixer.music.play()
                 user += 1
             print("\n")
             print("\t\t\t             SCORE BOARD")
@@ -73,6 +77,10 @@ while True:
                 print("Tie!")
             else:
                 print("You won!")
+                mixer.init()
+                mixer.music.load("Exercise6_Music_Win.mp3")
+                mixer.music.set_volume(0.7)
+                mixer.music.play()
                 user += 1
             print("\n")
             print("\t\t\t            SCORE BOARD")
