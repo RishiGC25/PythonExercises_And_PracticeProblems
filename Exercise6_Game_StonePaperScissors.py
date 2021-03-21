@@ -30,11 +30,11 @@ while True:
             print(f"You chose {userChoice} and CPU chose {choice}")
             if choice == "P":
                 print("You could not win this one.\nBetter luck next time!")
+                compu += 1
                 mixer.init()
                 mixer.music.load("Exercise6_Music_Lose.mp3")
                 mixer.music.set_volume(0.7)
                 mixer.music.play()
-                compu += 1
             elif choice == "S":
                 print("Tie!")
             else:
@@ -55,11 +55,11 @@ while True:
             print(f"You chose {userChoice} and CPU chose {choice}")
             if choice == "S":
                 print("You could not win this one.\nBetter luck next time!")
+                compu += 1
                 mixer.init()
                 mixer.music.load("Exercise6_Music_Lose.mp3")
                 mixer.music.set_volume(0.7)
                 mixer.music.play()
-                compu += 1
             elif choice == "P":
                 print("Tie!")
             else:
@@ -80,11 +80,11 @@ while True:
             print(f"You chose {userChoice} and CPU chose {choice}")
             if choice == "S":
                 print("You could not win this one.\nBetter luck next time!")
+                compu += 1
                 mixer.init()
                 mixer.music.load("Exercise6_Music_Lose.mp3")
                 mixer.music.set_volume(0.7)
                 mixer.music.play()
-                compu += 1
             elif choice == "X":
                 print("Tie!")
             else:
