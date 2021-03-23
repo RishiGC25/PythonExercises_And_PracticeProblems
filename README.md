@@ -33,8 +33,7 @@ The program should take operator and the two numbers as input from the user and 
 
 ## Exercise3_GuessTheNumber
 A "Number Guessing Game," in which a winning number is set to some integer value. 
-The Program should take input from the user,
-and if the entered number is less than the winning number, a message should display that the number is smaller and the appropriate message if it is larger.
+The Program should take input from the user, and if the entered number is less than the winning number, a message should display that the number is smaller and the appropriate message if it is larger.
 
   
 ## Exercise4_PatternPrinting
