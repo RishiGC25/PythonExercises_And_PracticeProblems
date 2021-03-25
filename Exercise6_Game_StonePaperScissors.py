@@ -108,7 +108,10 @@ while True:
         
         if user > compu:
             print("Congratulations!! \nYou WON!!!!!!")
-
+            mixer.init()
+            mixer.music.load("Exercise6_Music_GameWin.mp3")
+            mixer.music.set_volume(0.7)
+            mixer.music.play()
         elif compu > user:
             print("Sorry! \nYou lost the game.\nPlease try again.\n")
         else:
