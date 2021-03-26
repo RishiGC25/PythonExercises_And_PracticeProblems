@@ -46,7 +46,6 @@ False: Prints an inverted star pattern arrangement of n lines
 ## Exercise5_HealthManagementSystem
 The task is to create a "Health Management System." Suppose you are a fitness trainer and nutritionist. You have to deal with three clients, i.e., (Harry, Rohan, Hammad). For each client, you have to design their exercise and diet plan.
 
-Instructions:
 Create a food log file and an exercise log file for each client.
 Ask the user whether they want to log or retrieve client data.
 Write a function that takes the user input of the client's name. After the client's name is entered, it will display a
