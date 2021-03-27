@@ -60,7 +60,7 @@ while True:
         print("\nKindly drink 250 ML of water.")
 
         while True:
-            Water = input('Say "Drank" to end the embarrassing music :)')
+            Water = input('Type and Enter "Drank" to end the embarrassing music :)')
             WaterQuery = Water.upper()
 
             now = datetime.datetime.now()
@@ -92,7 +92,7 @@ while True:
 
 
         while True:
-            Eye = input('Say "EyDone" to end the embarrassing music :)')
+            Eye = input('Type and Enter "EyDone" to end the embarrassing music :)')
             EyeQuery = Eye.upper()
 
             now = datetime.datetime.now()
@@ -124,7 +124,7 @@ while True:
 
         while True:
                 
-            Exercise = input('Say "ExDone" to end the embarrassing music :)')
+            Exercise = input('Type and Enter "ExDone" to end the embarrassing music :)')
             ExerciseQuery = Exercise.upper()
             now = datetime.datetime.now()
             TimeNow = now.strftime("%H:%M:%S")
