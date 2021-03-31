@@ -77,7 +77,6 @@ while True:
             if choice == "S":
                 print("You could not win this one.\nBetter luck next time!")
                 compu += 1
-                mixer.init()
                 mixer.music.load("Exercise6_Music_Lose.mp3")
                 mixer.music.set_volume(0.7)
                 mixer.music.play()
@@ -85,7 +84,6 @@ while True:
                 print("Tie!")
             else:
                 print("You won!")
-                mixer.init()
                 mixer.music.load("Exercise6_Music_Win.mp3")
                 mixer.music.set_volume(0.7)
                 mixer.music.play()
