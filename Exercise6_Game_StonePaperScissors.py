@@ -26,7 +26,7 @@ while True:
 
         choice = random.choice(lst)
 
-        if userChoice == "S":
+        if userChoice == "S":  # When user chooses Stone
             print(f"You chose {userChoice} and CPU chose {choice}")
             if choice == "P":
                 print("You could not win this one.\nBetter luck next time!")
@@ -49,7 +49,7 @@ while True:
             print(f"\t\t\tCPU:                           {compu}")
             print("\n\n\n")
 
-        elif userChoice == "P":
+        elif userChoice == "P":  # When user chooses Paper
             print(f"You chose {userChoice} and CPU chose {choice}")
             if choice == "S":
                 print("You could not win this one.\nBetter luck next time!")
@@ -72,7 +72,7 @@ while True:
             print(f"\t\t\tCPU:                           {compu}")
             print("\n\n\n")
 
-        elif userChoice == "X":
+        elif userChoice == "X":  # When user chooses Scissors
             print(f"You chose {userChoice} and CPU chose {choice}")
             if choice == "S":
                 print("You could not win this one.\nBetter luck next time!")
