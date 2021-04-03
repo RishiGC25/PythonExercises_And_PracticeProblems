@@ -94,11 +94,11 @@ while True:
             print(f"\t\t\tYou:                           {user}")
             print(f"\t\t\tCPU:                           {compu}")
             print("\n\n\n")
-        else:
+        else: # When user does not choose and enter one among the given letters
             print("Please enter a valid letter and try again!")
         attempts += 1
 
-    if attempts >= 10:
+    if attempts >= 10:  # When all (10) attempts get over
         
         if user > compu:
             print("Congratulations!! \nYou WON!!!!!!")
