@@ -100,12 +100,12 @@ while True:
 
     if attempts >= 10:  # When all (10) attempts get over
         
-        if user > compu:
+        if user > compu:  # When User scores more than Computer/CPU
             print("Congratulations!! \nYou WON!!!!!!")
             mixer.music.load("Exercise6_Music_GameWin.mp3")
             mixer.music.set_volume(0.7)
             mixer.music.play()
-        elif compu > user:
+        elif compu > user:  # # When Computer/CPU scores more than User
             print("Sorry! \nYou lost the game.\nPlease try again.\n")
         else:
             print("Oh my God! Its a draw!")
