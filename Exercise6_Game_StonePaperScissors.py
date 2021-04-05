@@ -113,9 +113,10 @@ while True:
         print("Your score      :              ", user)
         print("Computer's score:              ", compu)
 
-        print("Do you want to play again?")
 
-        print("Press and enter (Y/N)")
+        print("Do you want to play again?")  # Prompting User to play again
+
+        print("Press and enter (Y/N)")  # Asking User to input
 
         again = input()
         PlayAgain = again.upper()
