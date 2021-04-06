@@ -118,7 +118,7 @@ while True:
 
         print("Press and enter (Y/N)")  # Asking User to input
 
-        again = input()
+        again = input()  # Taking User input
         PlayAgain = again.upper()
         if PlayAgain == "Y":
             print("OKAY!\nGET READY")
