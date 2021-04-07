@@ -1,6 +1,6 @@
-import random
-import sys
-from pygame import mixer
+import random  # Importing random
+import sys  # Importing sys 
+from pygame import mixer  # Importing mixer from pygame
 
 lst = ["S", "P", "X"]
 attempts = 0
