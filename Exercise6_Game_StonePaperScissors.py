@@ -43,6 +43,7 @@ while True:
                 mixer.music.play()
                 user += 1
             print("\n")
+            print("\t\t\t---------------------------------")
             print("\t\t\t             SCORE BOARD")
             print("\t\t\t---------------------------------")
             print(f"\t\t\tYou:                           {user}")
@@ -66,6 +67,7 @@ while True:
                 mixer.music.play()
                 user += 1
             print("\n")
+            print("\t\t\t---------------------------------")
             print("\t\t\t             SCORE BOARD")
             print("\t\t\t---------------------------------")
             print(f"\t\t\tYou:                           {user}")
@@ -89,6 +91,7 @@ while True:
                 mixer.music.play()
                 user += 1
             print("\n")
+            print("\t\t\t---------------------------------")
             print("\t\t\t            SCORE BOARD")
             print("\t\t\t---------------------------------")
             print(f"\t\t\tYou:                           {user}")
