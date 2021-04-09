@@ -44,10 +44,10 @@ while True:
                 user += 1
             print("\n")
             print("\t\t\t---------------------------------")
-            print("\t\t\t             SCORE BOARD")
+            print("\t\t\t             SCORE BOARD         |")
             print("\t\t\t---------------------------------")
-            print(f"\t\t\tYou:                           {user}")
-            print(f"\t\t\tCPU:                           {compu}")
+            print(f"\t\t\tYou:                           {user}|")
+            print(f"\t\t\tCPU:                           {compu}|")
             print("\n\n\n")
 
         elif userChoice == "P":  # When user chooses Paper
@@ -68,10 +68,10 @@ while True:
                 user += 1
             print("\n")
             print("\t\t\t---------------------------------")
-            print("\t\t\t             SCORE BOARD")
+            print("\t\t\t             SCORE BOARD         |")
             print("\t\t\t---------------------------------")
-            print(f"\t\t\tYou:                           {user}")
-            print(f"\t\t\tCPU:                           {compu}")
+            print(f"\t\t\tYou:                           {user}|")
+            print(f"\t\t\tCPU:                           {compu}|")
             print("\n\n\n")
 
         elif userChoice == "X":  # When user chooses Scissors
@@ -92,10 +92,10 @@ while True:
                 user += 1
             print("\n")
             print("\t\t\t---------------------------------")
-            print("\t\t\t            SCORE BOARD")
+            print("\t\t\t            SCORE BOARD         |")
             print("\t\t\t---------------------------------")
-            print(f"\t\t\tYou:                           {user}")
-            print(f"\t\t\tCPU:                           {compu}")
+            print(f"\t\t\tYou:                           {user}|")
+            print(f"\t\t\tCPU:                           {compu}|")
             print("\n\n\n")
         else: # When user does not choose and enter one among the given letters
             print("Please enter a valid letter and try again!")
