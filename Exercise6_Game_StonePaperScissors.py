@@ -24,7 +24,7 @@ while True:
 
         userChoice = inpChoice.upper()
 
-        choice = random.choice(lst)
+        choice = random.choice(lst)  # A random option is chosen from Stone, Paper or Scissors from the list
 
         if userChoice == "S":  # When user chooses Stone
             print(f"You chose {userChoice} and CPU chose {choice}")
