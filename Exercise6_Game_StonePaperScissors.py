@@ -2,7 +2,7 @@ import random  # Importing random
 import sys  # Importing sys 
 from pygame import mixer  # Importing mixer from pygame
 
-lst = ["S", "P", "X"]
+lst = ["S", "P", "X"]  # A list of the options: Stone, Paper and Scissors from which a random generation occurs
 attempts = 0
 compu = 0
 user = 0
