@@ -3,7 +3,7 @@ import sys  # Importing sys
 from pygame import mixer  # Importing mixer from pygame
 
 lst = ["S", "P", "X"]  # A list of the options: Stone, Paper and Scissors from which a random generation of choice occurs
-attempts = 0
+attempts = 0  # In the beginning, the number of attemts have to be zero
 compu = 0
 user = 0
 print("Stone, Paper or Scissors?")
