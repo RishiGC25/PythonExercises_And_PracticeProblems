@@ -25,10 +25,10 @@ import datetime
 now = datetime.datetime.now()
 TimeNow = now.strftime("%H:%M:%S")
 
-TimeElapsedSince9AM = ( (int(TimeNow[0:2]) - 9)*3600 + (60*(int(TimeNow[3:5]))) + (int(TimeNow[6:8])) )
+TimeElapsedSince9AM = ( (int(TimeNow[0:2]) - 9)*3600 + (60*(int(TimeNow[3:5]))) + (int(TimeNow[6:8])) )  # Extracting time elapsed since 9 a.m. in seconds
 
-TimesMissedWaterEye = TimeElapsedSince9AM//1800
-TimesMissedWorkout = TimeElapsedSince9AM//2700
+TimesMissedWaterEye = TimeElapsedSince9AM//1800  # Number of times Water Drinking and Eye Workout missed before this program was started.
+TimesMissedWorkout = TimeElapsedSince9AM//2700  # Number of times Workout missed before this program was started.
 
 if (TimeElapsedSince9AM>1800):
 
