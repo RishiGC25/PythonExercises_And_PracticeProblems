@@ -23,7 +23,7 @@ import datetime
 
 
 now = datetime.datetime.now()
-TimeNow = now.strftime("%H:%M:%S")
+TimeNow = now.strftime("%H:%M:%S")  # Obtaining Current time
 
 TimeElapsedSince9AM = ( (int(TimeNow[0:2]) - 9)*3600 + (60*(int(TimeNow[3:5]))) + (int(TimeNow[6:8])) )  # Extracting time elapsed since 9 a.m. in seconds
 
@@ -46,7 +46,7 @@ WaterDose, EyDose, ExDose = 0,0,0
 while True:
 
     now = datetime.datetime.now()
-    TimeNow = now.strftime("%H:%M:%S")
+    TimeNow = now.strftime("%H:%M:%S")  # Obtaining Current time
 
     TimeElapsedSince9AM = ( (int(TimeNow[0:2]) - 9)*3600 + (60*(int(TimeNow[3:5]))) + (int(TimeNow[6:8])) )
     
@@ -64,7 +64,7 @@ while True:
             WaterQuery = Water.upper()
 
             now = datetime.datetime.now()
-            TimeNow = now.strftime("%H:%M:%S")
+            TimeNow = now.strftime("%H:%M:%S")  # Obtaining Current time
 
             if WaterQuery == 'DRANK':
                 mixer.music.stop()
@@ -81,7 +81,7 @@ while True:
 
 
         now = datetime.datetime.now()
-        TimeNow = now.strftime("%H:%M:%S")
+        TimeNow = now.strftime("%H:%M:%S")  # Obtaining Current time
 
         mixer.init()
         mixer.music.load("Exercise7_Song_TheEyeSong.mp3")
@@ -96,7 +96,7 @@ while True:
             EyeQuery = Eye.upper()
 
             now = datetime.datetime.now()
-            TimeNow = now.strftime("%H:%M:%S")
+            TimeNow = now.strftime("%H:%M:%S")  # Obtaining Current time
 
             if EyeQuery == 'EYDONE':
                 mixer.music.stop() 
@@ -127,7 +127,7 @@ while True:
             Exercise = input('Type and Enter "ExDone" to end the embarrassing music :)')
             ExerciseQuery = Exercise.upper()
             now = datetime.datetime.now()
-            TimeNow = now.strftime("%H:%M:%S")
+            TimeNow = now.strftime("%H:%M:%S")  # Obtaining Current time
 
             if ExerciseQuery == 'EXDONE':
                 mixer.music.stop()
@@ -141,4 +141,4 @@ while True:
                 continue
     
     now = datetime.datetime.now()
-    TimeNow = now.strftime("%H:%M:%S")
+    TimeNow = now.strftime("%H:%M:%S")  # Obtaining Current time
