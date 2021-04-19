@@ -66,7 +66,7 @@ while True:
             now = datetime.datetime.now()
             TimeNow = now.strftime("%H:%M:%S")  # Obtaining Current time
 
-            if WaterQuery == 'DRANK':
+            if WaterQuery == 'DRANK':  # The user has to enter the value to stop the music from playing
                 mixer.music.stop()
                 WaterDose += 1
                 f = open("Exercise7_WaterDose.txt","a")
@@ -98,7 +98,7 @@ while True:
             now = datetime.datetime.now()
             TimeNow = now.strftime("%H:%M:%S")  # Obtaining Current time
 
-            if EyeQuery == 'EYDONE':
+            if EyeQuery == 'EYDONE':# The user has to enter the value to stop the music from playing
                 mixer.music.stop() 
                 EyDose += 1
                 f = open("Exercise7_EyeDose.txt","a")
@@ -129,7 +129,7 @@ while True:
             now = datetime.datetime.now()
             TimeNow = now.strftime("%H:%M:%S")  # Obtaining Current time
 
-            if ExerciseQuery == 'EXDONE':
+            if ExerciseQuery == 'EXDONE':# The user has to enter the value to stop the music from playing
                 mixer.music.stop()
                 ExDose += 1 
                 f = open("Exercise7_ExerciseDose.txt","a")
